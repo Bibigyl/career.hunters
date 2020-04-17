@@ -635,7 +635,8 @@ h4 {
 }
 
 .us p {
-  font-size: 20px;
+  font-size: 19px;
+  line-height: 25px;
 }
 
 .advantages {
