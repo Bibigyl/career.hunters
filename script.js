@@ -44,7 +44,6 @@ $('document').ready(function () {
         $('body,html').animate({ scrollTop: top }, 600);
     });
 
-    $()
 
 
     // services cards
@@ -139,13 +138,19 @@ $('document').ready(function () {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
 			}, 1000);
 		});
 		return false;
-	});
+    });
+    
+
+    // Logo on mobile
+    if (window.screen.availWidth < 988) {
+        $('#front .front__logo').attr('src', 'images/logo.png')
+    };
 
 });

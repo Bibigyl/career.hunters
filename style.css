@@ -153,10 +153,6 @@ h4 {
   border-bottom: 4px solid #c5c7c6;
 }
 
-/* .section_grey1 {
-  background-color: #e8e8e8;
-} */
-
 .section_grey1 {
   background-color: #fefefe;
 }
@@ -383,13 +379,14 @@ h4 {
 
 .front__logo {
   height: 73px;
+  width: auto;
   margin: 32px 20px 20px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .services {
-  /*     оставить это!!!!!
-    padding: 47px 0; */
-  padding: 47px 0 27px;
+  padding: 47px 0;
 }
 
 .services__title {
@@ -445,14 +442,6 @@ h4 {
   border: 2px solid #fefefe;
 }
 
-/* .pr:first-child {
-  margin-left: 0;
-}
-
-.pr:last-child {
-  margin-right: 0;
-} */
-
 .pr__title {
   background-color: #015977;
   height: 55px;
@@ -467,9 +456,7 @@ h4 {
   color: #fefefe;
   text-align: center;
   padding: 10px 12px 21px;
-  /*     Использовать этот
-    padding: 10px 12px; */
-  margin-bottom: auto;
+  padding: 10px 12px;
 }
 
 .pr__time {
@@ -543,14 +530,6 @@ h4 {
   opacity: 0;
   margin-bottom: 50px;
 }
-
-/* .work__item:first-child {
-  margin-left: 0;
-}
-
-.work__item:last-child {
-  margin-right: 0;
-} */
 
 .work__number {
   background-color: #c03331;
@@ -666,14 +645,6 @@ h4 {
   margin-left: 10px;
   margin-bottom: 20px;
 }
-
-/* .adv__item:first-child {
-    margin-left: 0;
-}
-
-.adv__item:last-child {
-    margin-right: 0;
-} */
 
 .adv__img {
   width: 100%;
@@ -878,14 +849,6 @@ h4 {
   opacity: 0;
   margin-bottom: 20px;
 }
-
-/* .rev:first-child {
-  margin-left: 0;
-}
-
-.rev:last-child {
-  margin-right: 0;
-} */
 
 .rev__quote {
   height: 30px;
@@ -1120,6 +1083,10 @@ h4 {
   .section_first {
     padding-top: 40px;
   }
+
+  .front__logo {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 942px) {
@@ -1226,6 +1193,6 @@ h4 {
   }
 
   .front__img {
-    height: 380px;
+    height: 480px;
   }
 }
