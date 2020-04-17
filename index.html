@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="stylesheet" type="text/css" href="libs/animate.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="libs/slick.css"> -->
     <link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
@@ -19,16 +20,16 @@
         <div class="section section_grey4">
             <div class="container header__info">
                 <div class="header__logo">
-                    <img src="images/logo.svg" alt="LOGO">
+                    <a href="#front">
+                        <img src="images/logo.png" alt="LOGO">
+                    </a>
                 </div>
                 <div class="header__mail">
-                    <!-- <div class="header__mail-icon">✉</div> -->
-                    <img class="header__mail-icon" src="images/letter.svg" alt="mail">
+                    <img class="header__mail-icon" src="images/letter.png" alt="mail">
                     <a class="header__mail-link" href="mailto:info@zakazat-rezume.ru">info@zakazat-rezume.ru</a>
                 </div>
                 <div class="header__phone">
-                    <img class="header__phone-icon" src="images/letter.svg" alt="phone">
-                    <!-- <div class="header__phone-icon">✆</div> -->
+                    <img class="header__phone-icon" src="images/phone.png" alt="phone">
                     <a class="header__phone-link" href="tel:+79162101125">+7 916 210 11 25</a>
                 </div>
                 <button class="header__button button button_small button_red button_order">Заказать звонок</button>
@@ -37,7 +38,7 @@
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
-                  </div>
+                </div>
             </div>
         </div>
 
@@ -205,9 +206,10 @@
 
                 <div class="pr">
                     <h4 class="pr__title title_white">Поиск и подбор 3 graduate программ</h4>
-                    <div class="pr__text">Заполнение анкет на сайтах работодателей / или отправка резюме и
-                        сопроводительного письма Заполнение всех дополнительных вопросов на сайтах программ (при
-                        необходимости на английском языке).</div>
+                    <div class="pr__text">Поиск и подбор 3 graduate программ в течение 72 часов и согласование с Вами
+                        Заполнение анкет на сайтах работодателей/или отправка резюме и сопроводительного письма напрямую
+                        Заполнение всех дополнительных вопросов на сайтах программ (при необходимости на английском
+                        языке)</div>
                     <div class="pr__time">72 часа</div>
                     <div class="pr__price">5000 руб.</div>
                     <button class="button button_big pr__button  button_order">Заказать</button>
@@ -328,6 +330,12 @@
         <div class="container order">
             <h2 class="title_white order__title">Сделать заказ</h2>
             <form action="">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="CareerHaunters">
+                <input type="hidden" name="admin_email" value="ekaterina.kryakushina@yandex.ru">
+                <input type="hidden" name="form_subject" value="Заказ">
+                <!-- END Hidden Required Fields -->
+
                 <div class="order__fields">
                     <input type="text" name="name" placeholder="Ведите имя*" required>
                     <input type="email" name="email" placeholder="Ведите Email*" required>
@@ -366,8 +374,12 @@
         <div class="container examples">
             <h2 class="examples__title title_grey">Пример резюме</h2>
             <div class="exs">
-                <div class="ex"></div>
-                <div class="ex"></div>
+                <div class="ex">
+                    <img src="images/ex1.png" alt="resume">
+                </div>
+                <div class="ex">
+                    <img src="images/ex2.png" alt="resume">
+                </div>
             </div>
         </div>
     </section>
@@ -436,7 +448,11 @@
         <div class="container footer">
 
             <div class="footer__content">
-                <div class="footer__logo">LOGO</div>
+                <div class="footer__logo">
+                    <a href="#front">
+                        <img src="images/logo.png" alt="LOGO">
+                    </a>
+                </div>
 
                 <div class="footer__serv">
                     <h4 class="footer__title title_red">Услуги</h4>
@@ -499,10 +515,8 @@
     </footer>
 
     <script src="libs/jquery.min.js"></script>
-    <!--     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
-        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
     <script src="libs/jquery.waypoints.min.js"></script>
-
+    <!-- <script src="libs/slick.min.js"></script> -->
     <script src="script.js"></script>
 
 

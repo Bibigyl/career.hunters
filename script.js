@@ -21,6 +21,9 @@ $('document').ready(function () {
 
     // scroll
     jQuery(window).scroll(function () {
+
+        if (window.screen.availWidth < 988) return;
+
         var $sections = $('section');
         $sections.each(function (i, el) {
             var top = $(el).offset().top - 100;
@@ -34,12 +37,14 @@ $('document').ready(function () {
         });
     });
 
-    $('nav').on('click', 'a', function (event) {
+    $('nav, .header__logo, .footer__logo ').on('click', 'a', function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top - 83;
         $('body,html').animate({ scrollTop: top }, 600);
     });
+
+    $()
 
 
     // services cards
@@ -116,4 +121,31 @@ $('document').ready(function () {
         $(this).toggleClass("is-active");
         $('#menu').toggleClass('menu_open');
     });
+
+    $('.header__nav-link').on('click', () => {
+        if ( $('#menu').hasClass('menu_open') ) {
+            setTimeout( () => {
+                $('#hamburger-1').trigger('click');
+            }, 300);
+        }
+    }); 
+
+
+	//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
 });
