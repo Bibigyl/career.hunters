@@ -39,8 +39,10 @@ $('document').ready(function () {
 
     $('nav, .header__logo, .footer__logo ').on('click', 'a', function (event) {
         event.preventDefault();
+        const headerHeight = (window.screen.availWidth > 988) ? 88 : 40;
+
         var id = $(this).attr('href'),
-            top = $(id).offset().top - 83;
+            top = $(id).offset().top - headerHeight;
         $('body,html').animate({ scrollTop: top }, 600);
     });
 
@@ -132,7 +134,10 @@ $('document').ready(function () {
 
 	//E-mail Ajax Send
 	$("form").submit(function() { //Change
-		var th = $(this);
+        var th = $(this);
+        let test = th.find('[name="project_name"]');
+        if (test.val() !== test.attr('value')) return;
+
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change

@@ -459,6 +459,10 @@ h4 {
   padding: 10px 12px;
 }
 
+.pr__text-remark {
+    font-size: 12px;
+}
+
 .pr__time {
   background-color: #fefefe;
   height: 49px;
@@ -716,9 +720,6 @@ h4 {
 }
 
 .order select option {
-  width: 100% !important;
-  width: inherit;
-  font-size: 16px;
   font-family: 'Avante Light';
 }
 
@@ -728,8 +729,8 @@ h4 {
 
 .order .select-wrap:after {
   content: '▼';
-  color: #615a57;
-  font-size: 26px;
+  color: #989898;
+  font-size: 22px;
   position: absolute;
   right: 3px;
   top: 3px;
@@ -966,6 +967,12 @@ h4 {
   border-radius: 100%;
   justify-content: center;
   align-items: center;
+  transition: 0.2s;
+}
+
+.soc:hover {
+    background-color: #ec4b48;
+    transition: 0.2s;
 }
 
 .hamburger {
