@@ -1170,7 +1170,7 @@ h4 {
     text-transform: uppercase;
     font-family: 'Avante Demibold';
     cursor: pointer;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .custom-checkbox {
@@ -1252,8 +1252,6 @@ h4 {
 .pay__price {
     font-size: 18px;
 }
-
-
 
 /*-----------------------media-------------------*/
 @media (max-width: 1160px) {
