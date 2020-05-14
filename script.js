@@ -158,4 +158,14 @@ $('document').ready(function () {
         $('#front .front__logo').attr('src', 'images/logo.png')
     };
 
+    // pay
+    $('.order__pay input').change(function() {
+        console.log('55555')
+        if(this.checked == true) {
+            $('.pay').slideDown();
+        } else {
+            $('.pay').slideUp();
+        }
+    })
+
 });

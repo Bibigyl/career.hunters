@@ -755,7 +755,7 @@ h4 {
 }
 
 .order {
-    padding: 38px 0 20px 0;
+    padding: 38px 0 50px 0;
     background-color: #c03331;
 }
 
@@ -771,6 +771,7 @@ h4 {
 
 .order form {
     text-align: center;
+    margin-bottom: 80px;
 }
 
 .order input {
@@ -1153,6 +1154,104 @@ h4 {
     -webkit-transform: translateY(-11px) rotate(-45deg);
     transform: translateY(-11px) rotate(-45deg);
 }
+
+/*--------------- robokassa ----------------------*/
+
+.order__pay {
+    text-align: center;
+}
+
+.checkbox {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Avante Demibold';
+    cursor: pointer;
+    margin-bottom: 60px;
+}
+
+.custom-checkbox > input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    width: auto;
+}
+
+.custom-checkbox > span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox > span::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #fff;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox > input:not(:disabled):active + span::before {
+    background-color: rgba(#015977, .5);
+}
+
+.custom-checkbox > input:checked + span::before {
+    background-color: #015977;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.custom-checkbox > input:disabled + span::before {
+    background-color: #e9ecef;
+}
+
+.pay {
+    display: none;  
+}
+
+.pay__servs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    padding: 40px 30px 20px;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #efefef;
+}
+
+.pay__serv {
+    width: 100%;
+    max-width: 250px;
+
+}
+
+.pay__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+    min-height: 36px;
+}
+
+.pay__price {
+    font-size: 18px;
+}
+
+.pay__button {
+    margin: 0 20px 40px;
+}
+
 
 /*-----------------------media-------------------*/
 @media (max-width: 1160px) {
