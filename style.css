@@ -1238,19 +1238,40 @@ h4 {
 .pay__serv {
     width: 100%;
     max-width: 200px;
-    margin: 0px 30px 60px;
+    margin: 0px 30px 80px;
 
 }
 
 .pay__title {
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     min-height: 36px;
 }
 
 .pay__price {
+    font-family: 'Avante Demibold';
     font-size: 18px;
+    color: #015977;
+    margin-bottom: 18px;
+    color: #9a9a9a;
+}
+
+.pay__price span {
+    font-size: 21px;
+    margin-right: 3px;
+}
+
+.pay__link {
+    padding: 9px 40px;
+    text-decoration: none;
+}
+
+.pay__text {
+    position: relative;
+    top: -7px;
+    font-size: 14px;
+    color: grey;
 }
 
 /*-----------------------media-------------------*/
